@@ -1,24 +1,23 @@
-# README
+# Awesome File System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple filesystem application.
 
-Things you may want to cover:
+You can see a example deployed on: https://awesomefilesystem.herokuapp.com
 
 * Ruby version
+    - 3.1.2
+* Rails version
+    - 7.0.3
+* Database
+    - The project is default configured with **postgresql** database and **gem pg**
+    - You can change the database adapter on **database.yml**. Remember to add the required dependencies
 
-* System dependencies
+* Database configuration:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
+    ````
+    $ rake db:create
+    $ rake db:migrate
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    ````
+    $ rspec
